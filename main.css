@@ -1,0 +1,212 @@
+img,
+html {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+body {
+
+  background:
+      radial-gradient(circle farthest-side at 0% 50%,#ffffff 23.5%,#0000 0)21px 30px,
+      radial-gradient(circle farthest-side at 0% 50%,#f3f3f3 24%,#0000 0)19px 30px,
+      linear-gradient(#ffffff 14%,#0000 0, #0000 85%,#ffffff 0)0 0,
+      linear-gradient(150deg,#ffffff 24%,#f3f3f3 0,#f3f3f3 26%,#0000 0,#0000 74%,#f3f3f3 0,#f3f3f3 76%,#ffffff 0)0 0,
+      linear-gradient(30deg,#ffffff 24%,#f3f3f3 0,#f3f3f3 26%,#0000 0,#0000 74%,#f3f3f3 0,#f3f3f3 76%,#ffffff 0)0 0,
+      linear-gradient(90deg,#f3f3f3 2%,#ffffff 0,#ffffff 98%,#f3f3f3 0%)0 0 #ffffff;
+  background-size: 40px 60px;
+  background-color: #e1e1e1;
+  font: 1rem/1.5 Arial, sans-serif, times;
+
+}
+
+main {
+  margin: 10px;
+
+}
+
+/*HEADER*/
+
+header {
+  /*Background*/
+  background-image: url('images/goat.jpg');
+  background-size: cover;
+  background-position: center;
+  box-shadow: 2px 2px 5px #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  /*Text*/
+  letter-spacing: 1.6px;
+  font: 14px/1.5 Arial, sans-serif, times;
+}
+
+header h1 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  color: white;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+}
+
+/*Navigation*/
+header ul {
+  list-style: none;
+  padding: 0%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  /*cells*/
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-right: 10px;
+}
+
+header nav li {
+  padding: 5px;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: 20px;
+  color: whitesmoke;
+  font: 18px/1.5 Arial, sans-serif, times;
+}
+
+/*BODY LAYOUT*/
+
+#top h1,
+#middle h1,
+#end h1 {
+  font-size: 20px;
+}
+
+#top,
+#middle,
+#end {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+/*BODY TEXT*/
+
+h1,
+p {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*FOOTER*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+
+}
+
+/*ABOUT ME*/
+#footabout {
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+#aboutmain {
+  padding-bottom: 30%;
+}
+
+/*FILMS*/
+
+#film {
+  border: #e2e2e2;
+  border-radius: 5%;
+  border-style: outset;
+}
+
+/*Medium Screens*/
+@media screen and (min-width: 425px) {
+  #top img,
+  #middle img,
+  #end img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #one,
+  #two,
+  #three,
+  #four,
+  #five,
+  #six,
+  #seven,
+  #eight,
+  #nine {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  #top img,
+  #middle img,
+  #end img {
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+
+  #four,
+  #five,
+  #six {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #top h2 {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 5%;
+  }
+
+  p {
+    font-size: larger;
+    padding: 2%;
+  }
+
+  /*ABOUT ME PAGE*/
+  #about {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  #about img {
+    width: 50%;
+    height: auto;
+    border-radius: 5%;
+  }
+
+  #h2about {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20%;
+  }
+
+  /*FILMS*/
+  #film {
+    max-width: 25%;
+  }
+}
